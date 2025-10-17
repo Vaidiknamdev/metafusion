@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+footer{
+  color: white;
+}
+p {
+  color: white;
+}
+h3{
+  color: white;
+}
+button{
+  color: white;
+}
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; /* spacing between cards */
+  justify-items: center; /* center each card horizontally */
+  margin-top: 2rem;
+}
+h2,h1{
+  color: white;
+}
+/* === Landing Page Wrapper === */
+.landing-wrapper {
+  background: linear-gradient(to bottom right, #120A2F, #1A1033);
+  color: white;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* === Header === */
+.landing-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px #7B00FF);
+}
+
+.project-name {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #7B00FF;
+}
+
+/* === Tagline === */
+.tagline {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tagline h2 {
+  font-size: 2rem;
+  color: #00CFFF;
+  text-shadow: 0 0 8px #00CFFF;
+}
+
+.tagline p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Action Buttons === */
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.connect-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.launch-btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: white;
+  border: none;
+  background: linear-gradient(to right, #E63996, #6A3AB2);
+  box-shadow: 0 0 10px #E63996;
+}
+
+.launch-btn:hover {
+  transform: scale(1.05);
+}
+
+/* === Banners === */
+/* .banner {
+  height: 250px;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px #7B00FF;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+} */
+
+.banner-1 {
+  background-image: url('/banner1.jpg');
+}
+
+.banner-2 {
+  background-image: url('/banner2.jpg');
+}
+.banner-3 {
+  background-image: url('/banner3.jpg');
+}
+
+
+
+/* === About Section === */
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #7B00FF;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* === How-To Section === */
+.howto {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.howto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 8px #00CFFF;
+}
+
+.howto ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  color: #ccc;
+}
+
+.howto li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  .project-name {
+    font-size: 2.2rem;
+  }
+
+  .tagline h2 {
+    font-size: 1.6rem;
+  }
+
+  .banner {
+    height: 180px;
+  }
+
+  .banner h3 {
+    font-size: 1.4rem;
+  }
+
+  .launch-btn {
+    width: 100%;
+  }
+}
+footer{
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #444;
+  margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+/* @layer base {
+  body {
+    @apply font-sans bg-background text-text;
+  }
+} */
+
+
+/* .card {
+  padding: 2em;
+}
+.read-the-docs {
+  color: #888;
+}
+body {
+  @apply text-white ;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
